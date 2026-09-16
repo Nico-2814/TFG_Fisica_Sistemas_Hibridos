@@ -1,0 +1,13 @@
+jax==0.11.1
+jax-cuda12-pjrt==0.11.1
+jax-cuda12-plugin==0.11.1
+jaxlib==0.11.1
+jaxtyping==0.3.11
+matplotlib==3.10.0
+matplotlib-inline==0.2.1
+matplotlib-venn==1.1.2
+numpy==2.5.3
+optax==0.2.8
+qutip==5.3.1
+qutip-jax==0.1.1
+scipy==1.18.1
