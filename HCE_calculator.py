@@ -35,7 +35,7 @@ def calcular_bloque_einsum(m, mp, rho_val, phi_p, D2, N2):
 
 # Crear directorios
 makedirs("molecular_model", exist_ok=True)
-makedirs("molecular_model/HCEs_no_diag", exist_ok=True)
+makedirs("molecular_model/HCEs", exist_ok=True)
 makedirs(f"molecular_model/HCEs/k_{k_val}", exist_ok=True)
 
 
@@ -141,6 +141,6 @@ for beta in betas:
     rho_qobj = Qobj(rho_HCE)
     rho_qobj.dims = [[N_Q, N_Q, N_c, N_c], [N_Q, N_Q, N_c, N_c]]
 
-    qsave(rho_qobj, f"molecular_model/HCEs_no_diag/k_{k_val}/HCE_{beta:.4f}_{N_c}")
+    qsave(rho_qobj, f"molecular_model/HCEs/k_{k_val}/HCE_{beta:.4f}_{N_c}")
     
 print("Proceso finalizado correctamente.")
